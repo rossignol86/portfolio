@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Diagonale avec Contenu Réactif</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .diagonal-div {
+            width: 100%;
+            height: 400px; /* Hauteur maximale de la div */
+            background: red;
+            clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espace entre l'image et le texte */
+            flex-wrap: wrap;
+        }
+
+        .content img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        .text-content {
+            max-width: calc(100% - 440px); /* Largeur disponible après la largeur de l'image + gap */
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            .diagonal-div {
+                height: auto; /* Ajuster la hauteur pour les écrans plus petits */
+                clip-path: none;
+                padding: 20px 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .content img {
+                width: 100%;
+                height: auto;
+            }
+
+            .text-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="diagonal-div">
+        <div class="content">
+            <div class="text-content">
+                <h1>Titre de l'article</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <img src="https://via.placeholder.com/400x250" alt="Placeholder Image">
+        </div>
+    </div>
+</body>
+</html>
