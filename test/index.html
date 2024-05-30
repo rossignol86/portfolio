@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        .fixed-section {
+            width: 30%;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fixed-section .image-text img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .fixed-section .image-text p {
+            margin-top: 20px;
+        }
+
+        .mobile-section {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .content-section {
+            height: 600px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-section img {
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+
+        .content-section h1 {
+            margin-top: 0;
+        }
+
+        .content-section p {
+            margin-top: 10px;
+        }
+
+        .content-section:nth-child(1) {
+            background-color: #ffcccc;
+        }
+
+        .content-section:nth-child(2) {
+            background-color: #ccffcc;
+        }
+
+        .content-section:nth-child(3) {
+            background-color: #ccccff;
+        }
+
+        .content-section:nth-child(4) {
+            background-color: #ffffcc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .fixed-section, .mobile-section {
+                width: 100%;
+            }
+
+            .content-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .content-section img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fixed-section">
+            <div class="image-text">
+                <img src="https://via.placeholder.com/300" alt="Image description">
+                <p>Votre texte ici</p>
+            </div>
+        </div>
+        <div class="mobile-section">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#section1">Lien 1</a></li>
+                    <li><a href="#section2">Lien 2</a></li>
+                    <li><a href="#section3">Lien 3</a></li>
+                    <li><a href="#section4">Lien 4</a></li>
+                    <li><a href="#section5">Lien 5</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="content-section" id="section1">
+                    <img src="https://via.placeholder.com/300" alt="Image description 1">
+                    <div>
+                        <h1>Titre 1</h1>
+                        <p>Paragraphe de la section 1...</p>
+                    </div>
+                </div>
+                <div class="content-section" id="section2">
+                    <img src="https://via.placeholder.com/300" alt="Image description 2">
+                    <div>
+                        <h1>Titre 2</h1>
+                        <p>Paragraphe de la section 2...</p>
+                    </div>
+                </div>
+                <div class="content-section" id="section3">
+                    <img src="https://via.placeholder.com/300" alt="Image description 3">
+                    <div>
+                        <h1>Titre 3</h1>
+                        <p>Paragraphe de la section 3...</p>
+                    </div>
+                </div>
+                <div class="content-section" id="section4">
+                    <img src="https://via.placeholder.com/300" alt="Image description 4">
+                    <div>
+                        <h1>Titre 4</h1>
+                        <p>Paragraphe de la section 4...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

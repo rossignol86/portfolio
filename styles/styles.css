@@ -1,0 +1,161 @@
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body, html {
+height: 100%;
+font-family: Arial, sans-serif;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+height: 100%;
+}
+
+
+
+/* style colonne gauche fixe */
+.sectionfixe {
+width: 30%;
+background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+}
+
+.sectionfixeimgtxt {
+width: 100%;
+height: auto;
+}
+
+.image {
+width: 100%;
+margin-top: 20px;
+background-color: burlywood;
+}
+
+.texte {
+max-width: 100%;
+height: auto;
+margin-top: 20px;
+color: yellow;
+}
+
+
+/* style colonne droite fixe  */
+.sectionmobile {
+width: 70%;
+display: flex;
+flex-direction: column;
+}
+
+.navbar {
+background-color: #ffffff;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+justify-content: space-around;
+padding: 10px;
+}
+
+.navbar ul li {
+margin: 0 10px;
+}
+
+.navbar ul li a {
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+}
+
+.navbar ul li a:hover {
+background-color: greenyellow;
+}
+
+.contenu {
+flex: 1;
+overflow-y: auto;
+}
+
+.sectioncontenu {
+height: 600px;
+padding: 20px;
+display: flex;
+align-items: center;
+}
+
+.sectioncontenu img {
+width: 300px;
+height: 300px;
+margin-right: 20px;
+}
+
+.sectioncontenu h1 {
+margin-top: 0;
+}
+
+.sectioncontenu p {
+margin-top: 10px;
+}
+
+.sectioncontenu:nth-child(1) {
+background-color: #ffcccc;
+}
+
+.sectioncontenu:nth-child(2) {
+background-color: #ccffcc;
+}
+
+.sectioncontenu:nth-child(3) {
+background-color: #ccccff;
+}
+
+.sectioncontenu:nth-child(4) {
+background-color: #ffffcc;
+}
+
+
+
+
+
+
+
+
+
+
+/* style media mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sectionfixe {
+        width: 100%;
+    }
+
+    
+    .sectionmobile {
+        width: 100%;
+    }
+
+    .sectioncontenu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sectioncontenu img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
