@@ -56,7 +56,7 @@ flex-direction: column;
 }
 
 .navbar {
-background-color: #ffffff;
+background-color: #cfc1c1;
 }
 
 .navbar ul {
@@ -73,12 +73,17 @@ margin: 0 10px;
 .navbar ul li a {
 color: black;
 text-decoration: none;
-padding: 10px 15px;
+padding: 10px 10px;
 display: block;
+width: 150px;
+text-align: center;
 }
 
 .navbar ul li a:hover {
 background-color: greenyellow;
+width: 150px;
+text-align: center;
+border-radius: 10px;
 }
 
 
@@ -102,7 +107,7 @@ justify-content: center;
 .sectioncontenu img {
 width: 300px;
 height: 250px;
-margin: 20px 20px 20px 20px;
+margin: 0px 20px 20px 20px;
 }
 
 .sectioncontenu h1 {
