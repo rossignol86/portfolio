@@ -20,7 +20,7 @@ height: 100%;
 /* style colonne gauche fixe */
 .sectionfixe {
 width: 30%;
-background-image: url("/images/fond4.jpg") ;
+background-color: black;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -96,8 +96,14 @@ overflow-y: auto;
 }
 
 .sectioncontenu {
-height: 400px;
-/* padding: 20px; */
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.sectioninterieur{
 display: flex;
 align-items: center;
 justify-content: center;
@@ -106,27 +112,24 @@ justify-content: center;
 .sectioncontenu img {
 width: 300px;
 height: 250px;
-margin: 0px 20px 0px 20px;
+margin: 30px 20px 0px 20px;
 }
 
 .sectioncontenu h1 {
 margin: 0px 20px 0px 20px;
-/* width: 400px; */
 }
 
 .sectioncontenu p {
 margin: 0px 20px 0px 20px;
-width: 400px;
 }
 
 .sectioncontenu:nth-child(1) {
 background: red;
-clip-path: polygon(0 0, 100% 0, 100% 300px, 0 400px);
+clip-path: polygon(0 0, 100% 0, 100% 500px, 0 600px);
 }
 
 .sectioncontenu:nth-child(2) {
 background: #ffffff;
-height: 350px;
 }
 
 .sectioncontenu:nth-child(3) {
