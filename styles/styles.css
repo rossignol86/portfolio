@@ -20,7 +20,7 @@ height: 100%;
 
 /* style colonne gauche fixe */
 .sectionfixe {
-width: 30%;
+width: 25%;
 background-color: black;
 display: flex;
 flex-direction: column;
@@ -31,12 +31,12 @@ padding: 20px;
 }
 
 .sectionfixeimgtxt {
-width: 100%;
+width: 300px;
 height: auto;
 }
 
 .image {
-width: 100%;
+width: 300px;
 margin-top: 20px;
 }
 
@@ -50,11 +50,14 @@ color: yellow;
 
 /* style colonne droite fixe  */
 .sectionmobile {
-width: 70%;
+width: 75%;
 display: flex;
 flex-direction: column;
 }
 
+.{
+
+}
 .navbar {
 background-color: #ffffff;
 }
@@ -87,7 +90,7 @@ overflow-y: auto;
 }
 
 .sectioncontenu {
-height: 600px;
+height: 800px;
 padding: 20px;
 display: flex;
 align-items: center;
@@ -109,6 +112,7 @@ margin-top: 10px;
 
 .sectioncontenu:nth-child(1) {
 background-color: #ffcccc;
+background-image: url(images/fond4.jpg);
 }
 
 .sectioncontenu:nth-child(2) {
