@@ -10,6 +10,7 @@ height: 100%;
 font-family: Arial, sans-serif;
 }
 
+
 .container {
 display: flex;
 flex-direction: row;
@@ -55,11 +56,8 @@ display: flex;
 flex-direction: column;
 }
 
-.{
-
-}
 .navbar {
-background-color: #ffffff;
+background-color: #CDDC29;
 }
 
 .navbar ul {
@@ -81,7 +79,21 @@ display: block;
 }
 
 .navbar ul li a:hover {
-background-color: greenyellow;
+font-weight: bold;
+}
+
+
+
+
+
+/* style information pages textes et visuels */
+.imagefonddiv {
+width: 100%;
+height: 850px;
+background-image: url('/images/2147.jpg');
+background-size: cover; /* Pour que l'image couvre tout le div */
+background-position: center; /* Pour centrer l'image */
+background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
 }
 
 .contenu {
@@ -89,43 +101,27 @@ flex: 1;
 overflow-y: auto;
 }
 
-.sectioncontenu {
-height: 800px;
-padding: 20px;
+.sectioncontenuimage {
+height: 850px;
 display: flex;
 align-items: center;
 }
 
-.sectioncontenu img {
-width: 300px;
-height: 300px;
-margin-right: 20px;
+.sectioncontenufondgris {
+height: 500px;
+display: flex;
+align-items: center;
+background-color: #F0F1F3;
 }
 
-.sectioncontenu h1 {
-margin-top: 0;
+.sectioncontenufondblanc {
+height: 500px;
+display: flex;
+align-items: center;
+background-color: #ffffff;
 }
+    
 
-.sectioncontenu p {
-margin-top: 10px;
-}
-
-.sectioncontenu:nth-child(1) {
-background-color: #ffcccc;
-background-image: url(images/fond4.jpg);
-}
-
-.sectioncontenu:nth-child(2) {
-background-color: #ccffcc;
-}
-
-.sectioncontenu:nth-child(3) {
-background-color: #ccccff;
-}
-
-.sectioncontenu:nth-child(4) {
-background-color: #ffffcc;
-}
 
 
 
