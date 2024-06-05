@@ -209,7 +209,6 @@ text-decoration: none;
 
 .flecheverte {
   width: 20px;
-  padding:6px 0px 0px 0px
 }
 
 
@@ -306,7 +305,7 @@ align-items: center;
   width: 100%;
   font-family: "Kanit", sans-serif;
   font-size:70px;
-  line-height: 120px;
+  line-height: 70px;
   font-weight: 200;
   text-align: left;
   color: #000000;
@@ -322,12 +321,42 @@ align-items: center;
 
 
 
-.sectioncontenufondgris {
+.sectioncontenufondvert {
+background-color: #CDDC29;
+width: 100%;
 height: 850px;
 display: flex;
 align-items: center;
-background-color: #CDDC29;
+display: flex;
+justify-content: center;
+/* margin: 0 auto; */
+/* padding: 0px 0px 0px 60px; */
 }
+
+.visuelsfondvert {
+width: 30%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0px 20px 0px 20px;
+}
+
+.infosfondvert {
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0px 20px 0px 20px;
+}
+  
+
+
+
+
+
+
 
 
 
