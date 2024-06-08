@@ -1,0 +1,111 @@
+body {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloccontact {
+    background-color: aquamarine;
+    width: 600px;
+    height: 500px;
+    margin:0 auto;
+}
+
+.bloclogotitre {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* style formulaire */        
+form {
+/* On centre le formulaire */
+    width: 100%;
+/* Le contour du formulaire */
+    padding: 20px 0px 50px 0px;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.formulaire{
+  /* On s'assure que les champs texte ont la même police
+     Par défaut, les zones de texte ont une police à chasse
+     fixe. */
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 400px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leur libellé. */
+  vertical-align: top;
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 5em;
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}       
+        
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}        
+        
+.bouton-envoyer {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bouton-envoyer:hover, .bouton-envoyer:active {
+    background-color: black;
+    color: white;
+}
+
+
+
