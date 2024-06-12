@@ -21,21 +21,20 @@ if (!$connexion) {
 // Vérification si le formulaire est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
-    // Récupération des données du formulaire
+// Récupération des données du formulaire
     $nom = $_POST['nom'];
     $societe = $_POST['societe'];
     $email = $_POST['email'];
     $telephone = $_POST['telephone'];
     $message = $_POST['message'];
    
-    // Requête d'insertion des données
-    $sql = "INSERT INTO contacts (nom, email, telephone, message)
+// Requête d'insertion des données
+    $sql = "INSERT INTO contacts (nom, societe, email, telephone, message)
     VALUES ('$nom', '$societe', '$email', '$telephone', '$message')";
  
-    // Exécution de la requête d'insertion
+// Exécution de la requête d'insertion
     mysqli_query($connexion,$sql);
 }
- 
  
 // Fermer la connexion
 ?>
@@ -115,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="creations.html">Mes créations</a></li>
                     <li><a href="parcours.html">Mon parcours</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
         </nav>
           
@@ -131,42 +130,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </h1>
 
             <!-- Formulaire de renseignement -->
-                    <form action="contact.php" method="post">
-                    <ul>
-                        <li>
-                            <label for="nom">
-                            <a>Nom :</a>
-                            </label>
-                            <input class="formulaire" type="text" id="nom" name="nom" required>
-                        </li>
-                            <li>
-                            <label for="societe">
-                            <a>Société :</a>
-                            </label> 
-                            <input class="formulaire" type="text" id="societe" name="societe" required/>
-                        </li>
-                        <li>
-                            <label for="telephone">
-                            <a>Téléphone :</a></label>
-                            <input class="formulaire" type="text" id="telephone" name="telephone" required/>
-                        </li>   
-                        <li>
-                            <label for="email">
-                            <a>Email :</a></label>
-                            <input class="formulaire" type="email" id="email" name="email" required/>
-                        </li>
-                        <li>
-                            <label for="message">
-                            <a>Message :</a>
-                            </label>
-                            <textarea class="formulaire" id="message" name="message" required></textarea>
-                        </li>
-                    </ul>
+            <form action="contact.php" method="post">
+                <label for="nom">Nom :</label>
+                <input class="formulaire" type="text" id="nom" name="nom" required><br><br>
+                
+                <label for="societe">Société :</label>
+                <input class="formulaire" type="text" id="societe" name="societe"><br><br>
+                
+                <label for="telephone">Téléphone :</label>
+                <input class="formulaire" type="tel" id="telephone" name="telephone"><br><br>
+                
+                <label for="email">Email :</label>
+                <input class="formulaire" type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message :</label>
+                <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
+                
+                <input type="submit" value="Envoyer">
+            </form>
 
-                    <div class="bouton">
-                    <a class="bouton-envoyer">Envoyer</a>
-                    </div>                    
-                    </form>
+                    
                 </div>
             </container>            
                     
@@ -178,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <li><a href="index.html">Accueil</a></li>
                                 <li><a href="creations.html">Mes créations</a></li>
                                 <li><a href="parcours.html">Mon parcours</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                         
