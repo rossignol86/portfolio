@@ -121,6 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   
 <!-- partie centrale mobile -->        
         <div>
+
             
             <container class="bloccontact">
                 <div>
@@ -128,6 +129,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <img class="flechevertecontact" src="images/flecheverte1.png" alt="fleche verte">
                         Contact
                     </h1>
+                    <span class="dateheure">
+                        <?php
+                            // Un script PHP simple qui affiche la date et l'heure actuelles
+                            echo "<p>Nous sommes le " . date("d/m/Y") . " et il est " . date("H:i:s") . "</p>";
+                        ?>
+                    </span>
 
             <!-- Formulaire de renseignement -->
             <form action="contact.php" method="post">
