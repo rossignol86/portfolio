@@ -253,7 +253,7 @@ main {
 .imagefonddiv {
   width: 100%;
   height: 100%;
-  background-image: url("/images/2147.jpg");
+  background-image: url("../images/2147.jpg");
   background-size: cover; /* Pour que l'image couvre tout le div */
   background-position: center; /* Pour centrer l'image */
   background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
