@@ -1,33 +1,44 @@
 <?php
+ 
 // Paramètres de connexion
 $serveur = "localhost";
-$utilisateur = "votre_nom_utilisateur";
-$mot_de_passe = "votre_mot_de_passe";
-$base_de_donnees = "nom_de_votre_base_de_donnees";
+$utilisateur = "root";
+$mot_de_passe = "";
+$base_de_donnees = "portfolio";
+ 
 // Établir la connexion
-$connexion = mysqli_connect($serveur, $utilisateur,
+ $connexion = mysqli_connect($serveur, $utilisateur,
 $mot_de_passe, $base_de_donnees);
+ 
 // Vérifier la connexion
 if (!$connexion) {
-die("Échec de la connexion : " . mysqli_connect_error());
+    die("Échec de la connexion : " . mysqli_connect_error());
 } else {
-echo "Connexion réussie à la base de données.";
+    echo "Connexion réussie à la base de données.";
 }
-
-// Exécuter une requête SELECT
-$sql = "SELECT * FROM table";
-$resultat = mysqli_query($connexion, $sql);
-// Vérifier si la requête a réussi
-if ($resultat) {
-print_r($resultat);
-} else {
-echo "Erreur : " . mysqli_error($connexion);
+ 
+ 
+// Vérification si le formulaire est soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+    // Récupération des données du formulaire
+    $nom = $_POST['nom'];
+    $societe = $_POST['societe'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
+    $message = $_POST['message'];
+   
+    // Requête d'insertion des données
+    $sql = "INSERT INTO contacts (nom, email, telephone, message)
+    VALUES ('$nom', '$societe', '$email', '$telephone', '$message')";
+ 
+    // Exécution de la requête d'insertion
+    mysqli_query($connexion,$sql);
 }
+ 
+ 
 // Fermer la connexion
-mysqli_close($connexion);
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +124,6 @@ mysqli_close($connexion);
         <div>
             
             <container class="bloccontact">
-
                 <div>
                     <h1 class="contact">
                         <img class="flechevertecontact" src="images/flecheverte1.png" alt="fleche verte">
@@ -121,13 +131,13 @@ mysqli_close($connexion);
                     </h1>
 
             <!-- Formulaire de renseignement -->
-                <form action="/page-de-traitement" method="post">
+                    <form action="contact.php" method="post">
                     <ul>
                         <li>
-                            <label for="name">
+                            <label for="nom">
                             <a>Nom :</a>
                             </label>
-                            <input class="formulaire" type="text" id="name" name="name" required>
+                            <input class="formulaire" type="text" id="nom" name="nom" required>
                         </li>
                             <li>
                             <label for="societe">
@@ -141,32 +151,25 @@ mysqli_close($connexion);
                             <input class="formulaire" type="text" id="telephone" name="telephone" required/>
                         </li>   
                         <li>
-                            <label for="mail">
+                            <label for="email">
                             <a>Email :</a></label>
                             <input class="formulaire" type="email" id="email" name="email" required/>
                         </li>
                         <li>
                             <label for="message">
-                            <a>Votre message :</a>
+                            <a>Message :</a>
                             </label>
                             <textarea class="formulaire" id="message" name="message" required></textarea>
                         </li>
                     </ul>
 
-                <div class="bouton">
-                    <a href="" class="bouton-envoyer">Envoyer</a>
-                </div>                    
-                    
-
-                </form>
-
-
-
+                    <div class="bouton">
+                    <a class="bouton-envoyer">Envoyer</a>
+                    </div>                    
+                    </form>
                 </div>
-
             </container>            
-            
-          
+                    
 <!-- section footer fond vert -->
                 <section class="sectionfooterfondvert">
                     <footer class="stylefooter">
