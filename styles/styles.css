@@ -759,25 +759,95 @@ resize: vertical;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 .container {
+  width: 100%;
   flex-direction: column;
 }
+
+
+/*partie gauche noir et fixe*/
 aside {
-    position: static;
-    width: 100%;
+  position: static;
+  width: 100%;
+  height: 800px;
+}
+.imagefixe {
+  width: 100%;
+  margin: 0 auto;
+}
+.blocinfos{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+.nom {
+  font-size:40px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+  padding: 0px 0px 20px 0px;
+}
+.textepresentation {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  height: auto;
+  color: #ffffff;
+}
+.textecontact {
+  text-align: left;
+  font-weight:300;
+  font-size: 25px;
+  height: auto;
+  color: #ffffff;
+  padding: 20px 0px 0px 0px;
+  text-decoration: none;
+}
+.flecheverte {
+    width: 20px;
 }
 
-.professions {
-  width: 100%;
-  font-family: "Kanit", sans-serif;
-  font-size:26px;
-  line-height: 24px;
-  font-weight: 200;
-  text-align: left;
-  color: #000000;
-  padding: 0px 0px 20px 0px;
-  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+
+/* Section NAVBAR */
+nav {
+  background: #CDDC29;
+  top: 0;
+  position: sticky;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Ombre portée */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color:#000000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 }
