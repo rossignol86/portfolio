@@ -503,16 +503,15 @@ main {
 }
 
 .blocimageemailing{
-  width: 100%;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
 }
   
 .imageemailing{
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  /* height: 500px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,7 +795,7 @@ aside {
   height: 800px;
 }
 .imagefixe {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 .blocinfos{
@@ -808,22 +807,22 @@ aside {
   padding : 0px 30px 0px 30px;
 }
 .nom {
-  font-size:40px;
+  font-size:50px;
+  text-align: center;
   font-weight: 400;
-  text-align: left;
   color: #ffffff;
   padding: 0px 0px 20px 0px;
 }
 .textepresentation {
-  text-align: justify;
+  text-align: center;
   font-weight: 200;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 22px;
   height: auto;
   color: #ffffff;
 }
 .textecontact {
-  text-align: left;
+  text-align: center;
   font-weight:300;
   font-size: 25px;
   height: auto;
@@ -839,33 +838,30 @@ aside {
 /* Section NAVBAR */
 nav {
   background: #CDDC29;
-  top: 0;
-  position: sticky;
+  /* top: 0; */
+  /* position: sticky; */
 }
-
 .navbar ul {
+  width: 400px;
   list-style: none;
-  display: flex;
   flex-direction: column;
-  text-align: center;
+  margin: 0 auto;
   padding: 10px;
 }
-
 .navbar ul li a {
   text-align: center;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 40px;
   color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 10px;
 }
-
 .navbar ul li a:hover {
   font-weight: 300;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 40px;
   color: #ffffff;
   background-color:#000000;
   border-radius: 5px;
@@ -874,10 +870,84 @@ nav {
 }
 
 
-
-
-
-
+/* style page creations */   
+.bloccreations{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0px 0px 0px;
+}
+.bloccreations2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.titrecreations {
+  width: 100%;
+  font-family: "Kanit", sans-serif;
+  font-size:50px;
+  line-height: 50px;
+  font-weight: 200;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+  padding: 30px 0px 40px 0px;
+}
+.containercreations {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0px 0px 40px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  gap: 20px;
+  width: 400px;
+  height: 600px;
+}
+.containerimage {
+  width: 400px;
+  height: 330px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:top;
+  padding: 10px;
+}
+.travaux {
+  color: #000000;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+}
+.description {
+  font-size: 1em;
+  line-height: 20px;
+  color:#000000;
+  text-align: justify;
+  padding: 10px 10px 0px 10px;
+}
+.flechevertecontact {
+  width: 40px;
+}
 
 
 }
