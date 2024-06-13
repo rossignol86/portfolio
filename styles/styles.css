@@ -406,6 +406,9 @@ main {
 
 
 
+
+
+
 /* style page creations */   
 .bloccreations{
   width: 100%;
@@ -540,10 +543,8 @@ main {
 /* style page parcours professionnel */   
 .blocparcours{
   width: 100%;
-  height: 800px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 0 auto;
   padding: 30px 0px 0px 0px;
@@ -561,21 +562,43 @@ main {
   padding: 30px 0px 40px 0px;
 }
 
-.containerparcours {
-  display: flex;
-  margin: 0 auto;
-  gap: 40px;
-  padding: 0px 0px 40px 0px;
-  width: 100vh;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
+.containertxtparcours{
+  width: 700px;
+  padding: 0px 0px 0px 0px;
 }
 
+.entreprise {
+  font-size:24px;
+  line-height: 34px;
+  font-weight: 600;
+  color:#000000;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+}
 
+.annee {
+  font-size:20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #CDDC29;
+  text-align: center;
+}
 
+.profession {
+  font-size:40px;
+  line-height: 40px;
+  font-weight: 200;
+  color:#000000;
+  text-align: center;
+}
 
-
+.mission {
+  font-size:18px;
+  line-height: 22px;
+  font-weight: 200;
+  color:#000000;
+  text-align: justify;
+}
 
 
 
@@ -770,7 +793,7 @@ resize: vertical;
 aside {
   position: static;
   width: 100%;
-  height: 850px;
+  height: 800px;
 }
 .imagefixe {
   width: 100%;
@@ -818,7 +841,6 @@ nav {
   background: #CDDC29;
   top: 0;
   position: sticky;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Ombre portée */
 }
 
 .navbar ul {
@@ -850,5 +872,12 @@ nav {
   cursor: pointer;
   padding: 10px;
 }
+
+
+
+
+
+
+
 
 }
