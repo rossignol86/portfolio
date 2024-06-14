@@ -860,7 +860,15 @@ nav {
 
 
 
-/* section fond vert */
+
+
+
+
+
+
+
+
+/* section fond vert accueil */
 .sectioncontenufondvert {
   width: 100%;
   height: 100%;
@@ -880,9 +888,9 @@ nav {
   justify-content: center;
 }
 .bloctitregraphiste {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 38px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #000000;
   padding: 20px 20px 0px 20px;
@@ -899,7 +907,7 @@ nav {
 
 
 
-/* section fond blanc hauteur 850px */
+/* section fond blanc accueil*/
 .sectioncontenufondblanc {
   background-color: #ffffff;
   width: 100%;
@@ -920,9 +928,9 @@ nav {
   justify-content: center;
 }
 .bloctitrewebdev {
-  font-size: 36px;
-  line-height: 38px;
-  font-weight: 500;
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 600;
   text-align: center;
   color: #000000;
   padding: 20px 0px 0px 0px;
@@ -1028,7 +1036,6 @@ nav {
   margin: 0 auto;
   padding: 20px 0px 0px 0px;
 }
-
 .titreparcours {
   width: 100%;
   font-family: "Kanit", sans-serif;
@@ -1040,12 +1047,10 @@ nav {
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
   padding: 20px 0px 0px 0px;
 }
-
 .containertxtparcours{
   width: 350px;
   padding: 0px 10px 0px 10px;
 }
-
 .entreprise {
   font-size:24px;
   line-height: 34px;
@@ -1054,7 +1059,6 @@ nav {
   text-align: center;
   padding: 40px 0px 0px 0px;
 }
-
 .annee {
   font-size:20px;
   line-height: 20px;
@@ -1062,7 +1066,6 @@ nav {
   color: #CDDC29;
   text-align: center;
 }
-
 .profession {
   font-size:30px;
   line-height: 34px;
@@ -1070,7 +1073,6 @@ nav {
   color:#000000;
   text-align: center;
 }
-
 .mission {
   font-size:18px;
   line-height: 22px;
