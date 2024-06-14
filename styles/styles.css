@@ -312,7 +312,6 @@ main {
     object-fit: cover;
 }
   
-  
 .infosfondvert {
     width: 60%;
     display: flex;
@@ -767,18 +766,20 @@ resize: vertical;
 
 
 
-@media (max-width: 1000px) {
+/* @media (max-width: 800px) */
+
+@media only screen and (max-width: 650px){
 .container {
   width: 100%;
   flex-direction: column;
 }
 
-
 /*partie gauche noir et fixe*/
 aside {
   position: static;
   width: 100%;
-  height: 800px;
+  height: 100%;
+  padding: 0px 0px 40px 0px
 }
 .imagefixe {
   width: 90%;
@@ -820,7 +821,6 @@ aside {
     width: 20px;
 }
 
-
 /* Section NAVBAR */
 nav {
   background: #CDDC29;
@@ -860,12 +860,81 @@ nav {
 
 
 
+/* section fond vert */
+.sectioncontenufondvert {
+  width: 100%;
+  height: 100%;
+  background-color: #CDDC29;
+  justify-content: center;
+}
+.blocfondvert{
+  display: none;
+}
+.imagefondvert {
+  display: none;
+}
+.infosfondvert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloctitregraphiste {
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  padding: 20px 20px 0px 20px;
+}
+.bloctextegraphiste {
+  font-size:18px;
+  line-height: 22px;
+  font-weight: 200;
+  text-align: justify;
+  color: #000000;
+  padding: 20px 20px 20px 20px;
+}
 
 
 
 
+/* section fond blanc hauteur 850px */
+.sectioncontenufondblanc {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 
-
+}
+.blocfondblanc{
+  display: none;
+}
+.imagefondblanc {
+  display: none;
+}
+.infosfondblanc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloctitrewebdev {
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  padding: 20px 0px 0px 0px;
+}
+.bloctextewebdev {
+  font-size:18px;
+  line-height: 22px;
+  font-weight: 200;
+  text-align: justify;
+  color: #000000;
+  padding: 20px 20px 20px 20px;
+}
 
 
 /* style page creations */   
