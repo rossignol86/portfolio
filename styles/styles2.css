@@ -13,12 +13,13 @@ h1{
 }
 
 p {
-    font-family: "Kanit", sans-serif;
-    font-size: 12px;
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
 }
 
 a {
-      font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif;
+  text-align: left;
 }
 
 .kanit-thin {
@@ -142,7 +143,7 @@ aside {
   height: 100vh;
   position: sticky;
   top: 0;
-  min-width: 300px;
+  min-width: 250px;
   width: 25%;
   background: black;
 }
@@ -156,17 +157,17 @@ aside {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding: 0px 40px 0px 40px;
 }
 
 .nom {
+  width: 100%;
   font-size:62px;
   font-weight: lighter;
   text-align: left;
   color: #ffffff;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 40px 20px 40px;
 }
 
 .textepresentation {
@@ -174,17 +175,21 @@ aside {
   font-weight:300;
   font-size: 16px;
   line-height: 20px;
-  height: auto;
   color: #ffffff;
+  padding: 0px 40px 0px 40px;
+}
+
+.contact{
+  width: 100%;
+  height: 50px;
+  padding: 0px 40px 0px 40px;
+  text-align: left;
 }
 
 .textecontact {
   text-align: left;
-  font-weight:300;
   font-size: 20px;
-  height: auto;
   color: #ffffff;
-  padding: 20px 0px 0px 0px;
   text-decoration: none;
 }
 
@@ -788,7 +793,6 @@ resize: vertical;
   flex-direction: column;
 }
 
-
 /*partie gauche noir et fixe*/
 aside {
   position: static;
@@ -826,15 +830,15 @@ aside {
   text-align: center;
   font-weight:300;
   font-size: 25px;
+  line-height: 20px;
   height: auto;
   color: #ffffff;
-  padding: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   text-decoration: none;
 }
 .flecheverte {
     width: 20px;
 }
-
 
 /* Section NAVBAR */
 nav {
@@ -869,7 +873,6 @@ nav {
   cursor: pointer;
   padding: 10px;
 }
-
 
 /* style page creations */   
 .bloccreations{
@@ -921,7 +924,7 @@ nav {
   height: 600px;
 }
 .containerimage {
-  width: 400px;
+  width: 100%;
   height: 330px;
 }
 .image {
@@ -949,6 +952,10 @@ nav {
 .flechevertecontact {
   width: 40px;
 }
+
+
+
+
 
 
 }
