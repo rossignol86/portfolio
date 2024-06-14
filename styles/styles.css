@@ -130,7 +130,7 @@ a {
 }
 
 .container {
-    background: lightgrey;
+    background: rgb(255, 255, 255);
     display: flex;
 }
 
@@ -151,7 +151,6 @@ aside {
   width: 100%;
   margin: 0 auto;
 }
-
 .blocinfos{
   width: 100%;
   display: flex;
@@ -160,7 +159,6 @@ aside {
   margin: 0 auto;
   padding: 0px 40px 0px 40px;
 }
-
 .nom {
   font-size:62px;
   font-weight: lighter;
@@ -168,7 +166,6 @@ aside {
   color: #ffffff;
   padding: 0px 0px 20px 0px;
 }
-
 .textepresentation {
   text-align: justify;
   font-weight:300;
@@ -177,7 +174,6 @@ aside {
   height: auto;
   color: #ffffff;
 }
-
 .textecontact {
   text-align: left;
   font-weight:300;
@@ -187,7 +183,6 @@ aside {
   padding: 20px 0px 0px 0px;
   text-decoration: none;
 }
-
 .flecheverte {
     width: 20px;
 }
@@ -199,19 +194,20 @@ aside {
 
 /* Section NAVBAR */
 nav {
+  width: 100%;
+  height: 60px;
   background: #CDDC29;
   top: 0;
   position: sticky;
+  flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Ombre portée */
 }
-
 .navbar ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
-
 .navbar ul li a {
   text-align: center;
   font-weight: 300;
@@ -221,7 +217,6 @@ nav {
   display: block;
   padding: 10px;
 }
-
 .navbar ul li a:hover {
   font-weight: 300;
   color: #ffffff;
@@ -271,7 +266,7 @@ main {
 }
 
 .professions {
-  width: 100%;
+  width: 100vh;
   font-family: "Kanit", sans-serif;
   font-size:70px;
   line-height: 80px;
@@ -607,7 +602,7 @@ main {
 
 /* style page formulaire */   
 .bloccontact{
-  height: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -616,7 +611,6 @@ main {
   margin: 0 auto;
   padding: 0px 0px 0px 0px;
 }
-
 .contact {
   width: 100%;
   font-size:70px;
@@ -627,11 +621,9 @@ main {
   padding: 40px 0px 20px 0px;
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
 }
-
 .flechevertecontact {
   width: 50px;
 }
-
 .formulaire{
 width: 500px;
 box-sizing: border-box;
@@ -644,7 +636,6 @@ border: 1px solid #999;
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
-   
 form {
   width: 100%;
   height: 100%;
@@ -653,18 +644,15 @@ form {
   border-radius: 1em;
   text-align: center;
 }
-
 form li + li {
 margin-top: 20px;
 }
-
 label {
 /* Taille et alignement uniformes */
 display: inline-block;
 width: 150px;
 text-align: left;
 }
-
 textarea {
 /* On aligne les textes sur plusieurs lignes avec leur libellé. */
 vertical-align: top;
@@ -672,16 +660,14 @@ vertical-align: top;
 height: 5em;
 /* On permet de redimensionner verticalement. */
 resize: vertical;
-}       
-      
+}            
 .bouton {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
   padding: 40px;
-}        
-      
+}          
 .bouton-envoyer {
   display: inline-block;
   width: 150px;
@@ -695,7 +681,6 @@ resize: vertical;
   border-radius: 5px;
   background-color: white;
 }
-
 .bouton-envoyer:hover, .bouton-envoyer:active {
   background-color: black;
   color: white;
@@ -782,7 +767,7 @@ resize: vertical;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 .container {
   width: 100%;
   flex-direction: column;
@@ -839,6 +824,7 @@ aside {
 /* Section NAVBAR */
 nav {
   background: #CDDC29;
+  height: 270px;
   /* top: 0; */
   /* position: sticky; */
 }
@@ -869,6 +855,17 @@ nav {
   cursor: pointer;
   padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* style page creations */   
@@ -948,7 +945,154 @@ nav {
 }
 .flechevertecontact {
   width: 40px;
+  display: none;
 }
 
 
+
+/* style page parcours professionnel */   
+.blocparcours{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0px 0px 0px;
+}
+
+.titreparcours {
+  width: 100%;
+  font-family: "Kanit", sans-serif;
+  font-size:35px;
+  line-height: 40px;
+  font-weight: 200;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+  padding: 30px 0px 40px 0px;
+}
+
+.containertxtparcours{
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+}
+
+.entreprise {
+  font-size:24px;
+  line-height: 34px;
+  font-weight: 600;
+  color:#000000;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+}
+
+.annee {
+  font-size:20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #CDDC29;
+  text-align: center;
+}
+
+.profession {
+  font-size:40px;
+  line-height: 40px;
+  font-weight: 200;
+  color:#000000;
+  text-align: center;
+}
+
+.mission {
+  font-size:18px;
+  line-height: 22px;
+  font-weight: 200;
+  color:#000000;
+  text-align: justify;
+}
+
+
+
+
+
+
+/* style page formulaire */   
+.bloccontact{
+  height: 600px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+  margin: 0 auto;
+}
+.contact {
+  /* width: 100%; */
+  font-size:70px;
+  line-height: 70px;
+  font-weight: 200;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+}
+.formulaire{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+.dateheure {
+  width: 100%;
+  font-weight: 500;
+  color:#000000;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+form {
+  width: 400px;
+  /* height: 100%; */
+  /* Le contour du formulaire */
+  padding: 20px 0px 20px 0px;
+  border-radius: 1em;
+  text-align: center;
+}
+form li + li {
+margin-top: 40px;
+}
+label {
+/* Taille et alignement uniformes */
+display: inline-block;
+/* width: 100%; */
+text-align: center;
+}
+textarea {
+/* On aligne les textes sur plusieurs lignes avec leur libellé. */
+vertical-align: top;
+/* On fournit un peut d'espace pour saisir du texte. */
+height: 7em;
+/* On permet de redimensionner verticalement. */
+resize: vertical;
+}            
+.bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 40px;
+}          
+.bouton-envoyer {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: white;
+}
+.bouton-envoyer:hover, .bouton-envoyer:active {
+  background-color: black;
+  color: white;
+}
 }
