@@ -557,7 +557,7 @@ main {
 }
 
 .containertxtparcours{
-  width: 700px;
+  width: 600px;
   padding: 0px 0px 0px 0px;
 }
 
@@ -579,19 +579,26 @@ main {
 }
 
 .profession {
-  font-size:40px;
-  line-height: 40px;
+  font-size:48px;
+  line-height: 50px;
   font-weight: 200;
   color:#000000;
   text-align: center;
 }
-
+.postes {
+  font-size:18px;
+  line-height: 24px;
+  font-weight: bold;
+  color:#000000;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
 .mission {
   font-size:18px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 200;
   color:#000000;
-  text-align: justify;
+  text-align: center;
 }
 
 
@@ -1073,12 +1080,20 @@ nav {
   color:#000000;
   text-align: center;
 }
+.postes {
+  font-size:18px;
+  line-height: 24px;
+  font-weight: bold;
+  color:#000000;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
 .mission {
   font-size:18px;
-  line-height: 22px;
+  line-height: 224px;
   font-weight: 200;
   color:#000000;
-  text-align: justify;
+  text-align: center;
 }
 
 
