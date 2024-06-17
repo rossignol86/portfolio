@@ -926,8 +926,8 @@ nav {
   padding: 0px 0px 40px 0px;
   flex-direction: column;
 } 
-.imagegraphiste{
-  width: 350px;
+.imagegraphiste {
+  width: 400px;
   height: 350px;
   display: flex;
   align-items: center;
@@ -1068,7 +1068,7 @@ nav {
   padding: 30px 20px 0px 20px;
 }
 .sectioncouleurblanc{
-  width: 100%;
+  width: 400px;
   height: 100%;
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
@@ -1097,8 +1097,9 @@ nav {
   padding: 0px 0px 40px 0px;
 }
 .entreprise {
+  height: 20px;
   font-size:24px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: 600;
   color:#000000;
   text-align: center;
