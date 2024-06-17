@@ -283,7 +283,7 @@ main {
 
 
 
-/* section fond vert hauteur 850px */
+/* section fond vert */
 .sectioncontenufondvert {
   background-color: #CDDC29;
   width: 100%;
@@ -294,26 +294,8 @@ main {
   justify-content: center;
 }
   
-.blocfondvert {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: column; */
-}
-  
-.imagefondvert {
-    width:230px;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 20px 0px 20px;
-    object-fit: cover;
-}
-  
 .infosfondvert {
-    width: 60%;
+    width: 700px;
     display: flex;
     align-items: left;
     justify-content: left;
@@ -321,7 +303,7 @@ main {
 }
   
 .bloctitregraphiste {
-    width: 95%;
+    width: 100%;
     font-size:70px;
     line-height: 80px;
     font-weight: 200;
@@ -331,7 +313,7 @@ main {
 }
   
 .bloctextegraphiste {
-  width: 95%;
+  width: 100%;
   font-size:22px;
   line-height: 30px;
   font-weight: 200;
@@ -342,7 +324,7 @@ main {
 
 
 
-/* section fond blanc hauteur 850px */
+/* section fond blanc */
 .sectioncontenufondblanc {
   background-color: #ffffff;
   width: 100%;
@@ -353,26 +335,8 @@ main {
   justify-content: center;
 }
   
-.blocfondblanc{
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: column; */
-}
-  
-.imagefondblanc {
-  width: 230px;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 20px 0px 20px;
-  object-fit: cover;
-}
-  
 .infosfondblanc {
-  width: 60%;
+  width: 700px;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -380,23 +344,23 @@ main {
 }
 
 .bloctitrewebdev {
-  width: 95%;
+  width: 100%;
   font-size:70px;
   line-height: 80px;
   font-weight: 200;
   text-align: left;
   color: #000000;
-  padding: 0px 0px 20px 50px;
+  padding: 0px 30px 20px 0px;
 }
   
 .bloctextewebdev {
-  width: 95%;
+  width: 100%;
   font-size:22px;
   line-height: 30px;
   font-weight: 200;
   text-align: justify;
   color: #000000;
-  padding: 0px 30px 0px 50px;
+  padding: 0px 30px 0px 0px;
 }
 
 
@@ -543,9 +507,20 @@ main {
   margin: 0 auto;
   padding: 30px 0px 0px 0px;
 }
+.sectioncouleurvert{
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 50px 0px;
+}
+
+.containertxtparcours{
+  width: 600px;
+}
 
 .titreparcours {
-  width: 100vh;
+  width: 100%;
   font-family: "Kanit", sans-serif;
   font-size:70px;
   line-height: 80px;
@@ -553,12 +528,7 @@ main {
   text-align: center;
   color: #000000;
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
-  padding: 30px 0px 40px 0px;
-}
-
-.containertxtparcours{
-  width: 600px;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 40px 0px;
 }
 
 .entreprise {
@@ -567,7 +537,6 @@ main {
   font-weight: 600;
   color:#000000;
   text-align: center;
-  padding: 60px 0px 0px 0px;
 }
 
 .annee {
