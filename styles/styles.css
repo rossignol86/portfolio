@@ -507,18 +507,24 @@ main {
   margin: 0 auto;
   padding: 30px 0px 0px 0px;
 }
+.sectioncouleurblanc{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 0px;
+}
 .sectioncouleurvert{
   width: 100%;
   height: 100%;
-  background-color: #eaeaea;
-  padding: 10px 10px 10px 10px;
-  margin: 0px 0px 50px 0px;
+  background-color: #edf1cc;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 30px 0px 30px 0px;
 }
-
 .containertxtparcours{
   width: 600px;
 }
-
 .titreparcours {
   width: 100%;
   font-family: "Kanit", sans-serif;
@@ -530,7 +536,6 @@ main {
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
   padding: 0px 0px 40px 0px;
 }
-
 .entreprise {
   font-size:24px;
   line-height: 34px;
@@ -538,15 +543,13 @@ main {
   color:#000000;
   text-align: center;
 }
-
 .annee {
   font-size:20px;
   line-height: 20px;
   font-weight: 600;
-  color: #CDDC29;
+  color: #0a5412;
   text-align: center;
 }
-
 .profession {
   font-size:48px;
   line-height: 50px;
@@ -1010,22 +1013,36 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+}
+.sectioncouleurblanc{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 0px;
+}
+.sectioncouleurvert{
+  width: 100%;
+  height: 100%;
+  background-color: #edf1cc;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 30px 0px 30px 0px;
+}
+.containertxtparcours{
+  width: 450px;
 }
 .titreparcours {
   width: 100%;
   font-family: "Kanit", sans-serif;
-  font-size:50px;
-  line-height: 45px;
+  font-size:70px;
+  line-height: 80px;
   font-weight: 200;
   text-align: center;
   color: #000000;
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
-  padding: 20px 0px 0px 0px;
-}
-.containertxtparcours{
-  width: 350px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 40px 0px;
 }
 .entreprise {
   font-size:24px;
@@ -1033,18 +1050,17 @@ nav {
   font-weight: 600;
   color:#000000;
   text-align: center;
-  padding: 40px 0px 0px 0px;
 }
 .annee {
   font-size:20px;
   line-height: 20px;
   font-weight: 600;
-  color: #CDDC29;
+  color: #0a5412;
   text-align: center;
 }
 .profession {
-  font-size:30px;
-  line-height: 34px;
+  font-size:48px;
+  line-height: 50px;
   font-weight: 200;
   color:#000000;
   text-align: center;
@@ -1059,12 +1075,11 @@ nav {
 }
 .mission {
   font-size:18px;
-  line-height: 224px;
+  line-height: 24px;
   font-weight: 200;
   color:#000000;
   text-align: center;
 }
-
 
 
 
