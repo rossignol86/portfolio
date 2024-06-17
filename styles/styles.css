@@ -927,7 +927,7 @@ nav {
   flex-direction: column;
 } 
 .imagegraphiste{
-  width: 400px;
+  width: 350px;
   height: 350px;
   display: flex;
   align-items: center;
@@ -1065,7 +1065,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 20px 0px 20px;
 }
 .sectioncouleurblanc{
   width: 100%;
@@ -1098,14 +1098,14 @@ nav {
 }
 .entreprise {
   font-size:24px;
-  line-height: 34px;
+  line-height: 24px;
   font-weight: 600;
   color:#000000;
   text-align: center;
 }
 .annee {
   font-size:20px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 600;
   color: #0a5412;
   text-align: center;
