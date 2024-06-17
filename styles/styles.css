@@ -245,7 +245,6 @@ main {
   display: flex;
   align-items: center;
 }
-
 .imagefonddiv {
   width: 100%;
   height: 100%;
@@ -254,7 +253,6 @@ main {
   background-position: center; /* Pour centrer l'image */
   background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
 }
-
 /* style 4 métiers bloc central */
 .blocprofessions{
   height: 100vh;
@@ -264,7 +262,6 @@ main {
   margin: 0 auto;
   padding: 0px 0px 0px 60px;
 }
-
 .professions {
   width: 100vh;
   font-family: "Kanit", sans-serif;
@@ -276,7 +273,6 @@ main {
   padding: 0px 0px 20px 0px;
   text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
 }
-
 .flecheverteprofessions {
   width: 50px;
 }
@@ -837,7 +833,46 @@ nav {
 
 
 
-
+/* Section image de fond et titre métiers DISPARAIT*/
+.sectioncontenuimage {
+  display: flex;
+  align-items: center;
+}
+.imagefonddiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/2147.jpg");
+  background-size: cover; /* Pour que l'image couvre tout le div */
+  background-position: center; /* Pour centrer l'image */
+  background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+}
+/* style 4 métiers bloc central */
+.blocprofessions{
+  display: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0px 0px 0px 60px;
+}
+.professions {
+  display: none;
+  width: 100vh;
+  font-family: "Kanit", sans-serif;
+  font-size:70px;
+  line-height: 80px;
+  font-weight: 200;
+  text-align: left;
+  color: #000000;
+  padding: 0px 0px 20px 0px;
+  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+}
+.flecheverteprofessions {
+  display: none;
+  width: 50px;
+}
 
 
 
@@ -867,12 +902,12 @@ nav {
   justify-content: center;
 }
 .bloctitregraphiste {
-  font-size: 34px;
-  line-height: 38px;
-  font-weight: 600;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 500;
   text-align: center;
   color: #000000;
-  padding: 20px 20px 0px 20px;
+  padding: 30px 20px 0px 20px;
 }
 .bloctextegraphiste {
   font-size:18px;
@@ -880,7 +915,7 @@ nav {
   font-weight: 200;
   text-align: justify;
   color: #000000;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 30px 20px;
 }
 
 
@@ -907,9 +942,9 @@ nav {
   justify-content: center;
 }
 .bloctitrewebdev {
-  font-size: 34px;
-  line-height: 38px;
-  font-weight: 600;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 500;
   text-align: center;
   color: #000000;
   padding: 20px 0px 0px 0px;
@@ -920,7 +955,7 @@ nav {
   font-weight: 200;
   text-align: justify;
   color: #000000;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 30px 20px;
 }
 
 
