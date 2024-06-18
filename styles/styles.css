@@ -1058,30 +1058,27 @@ nav {
 
 /* style page parcours professionnel */   
 .blocparcours{
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 20px 0px 20px;
+  padding: 30px 0px 0px 0px;
 }
 .sectioncouleurblanc{
-  width: 400px;
+  width: 370px;
   height: 100%;
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
-  margin: 20px 0px 20px 0px;
 }
 .sectioncouleurvert{
-  width: 100%;
+  width: 370px;
   height: 100%;
   background-color: #edf1cc;
   padding: 20px 20px 20px 20px;
-  margin: 20px 0px 20px 0px;
-  border-radius: 30px 0px 30px 0px;
 }
 .containertxtparcours{
-  width: 400px;
+  width: 350px;
 }
 .titreparcours {
   width: 100%;
