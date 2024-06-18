@@ -1069,19 +1069,22 @@ nav {
   width: 370px;
   height: 100%;
   background-color: #ffffff;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 0px 20px 0px;
+  /* margin: 0 auto; */
 }
 .sectioncouleurvert{
   width: 370px;
   height: 100%;
   background-color: #edf1cc;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 0px 20px 0px;
+  /* margin: 0 auto; */
 }
 .containertxtparcours{
   width: 350px;
+  padding: 0px 0px 0px 0px;
 }
 .titreparcours {
-  width: 100%;
+  width: 370px;
   font-family: "Kanit", sans-serif;
   font-size:60px;
   line-height: 70px;
@@ -1092,13 +1095,16 @@ nav {
   padding: 0px 0px 40px 0px;
 }
 .entreprise {
+  width: 370px;
   font-size:28px;
   line-height: 30px;
   font-weight: 600;
   color:#000000;
   text-align: center;
+  padding: 0px 0px 0px 0px;
 }
 .annee {
+  width: 370px;
   font-size:20px;
   line-height: 36px;
   font-weight: 600;
@@ -1106,13 +1112,16 @@ nav {
   text-align: center;
 }
 .profession {
+  width: 370px;
   font-size:48px;
   line-height: 50px;
   font-weight: 200;
   color:#000000;
   text-align: center;
+  padding: 0px 0px 0px 0px;
 }
 .postes {
+  width: 370px;
   font-size:18px;
   line-height: 24px;
   font-weight: bold;
@@ -1121,11 +1130,13 @@ nav {
   padding: 10px 0px 0px 0px;
 }
 .mission {
+  width: 370px;
   font-size:18px;
   line-height: 24px;
   font-weight: 200;
   color:#000000;
   text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 
 
