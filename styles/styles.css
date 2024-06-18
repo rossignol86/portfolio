@@ -1058,7 +1058,7 @@ nav {
 
 /* style page parcours professionnel */   
 .blocparcours{
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
