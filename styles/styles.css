@@ -1066,21 +1066,21 @@ nav {
   padding: 30px 0px 0px 0px;
 }
 .sectioncouleurblanc{
-  width: 100%;
+  width: 300px;
   height: 100%;
   background-color: #ffffff;
   padding: 20px 0px 20px 0px;
   /* margin: 0 auto; */
 }
 .sectioncouleurvert{
-  width: 100%;
+  width: 300px;
   height: 100%;
   background-color: #edf1cc;
   padding: 20px 0px 20px 0px;
   /* margin: 0 auto; */
 }
 .containertxtparcours{
-  width: 350px;
+  width: 300px;
   padding: 0px 0px 0px 0px;
 }
 .titreparcours {
