@@ -799,13 +799,11 @@ aside {
 
 /* Section NAVBAR */
 nav {
-  background: #CDDC29;
-  height: 270px;
-  /* top: 0; */
-  /* position: sticky; */
+  background: #ffffff;
+  height: 230px;
 }
 .navbar ul {
-  width: 100%;
+  width: 300px;
   list-style: none;
   flex-direction: column;
   margin: 0 auto;
@@ -815,8 +813,8 @@ nav {
   text-align: center;
   font-weight: 300;
   font-size: 40px;
-  line-height: 40px;
-  color: #ffffff;
+  line-height: 30px;
+  color: #000000;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -824,9 +822,9 @@ nav {
 .navbar ul li a:hover {
   font-weight: 300;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 30px;
   color: #ffffff;
-  background-color:#000000;
+  background-color:#CDDC29;
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
@@ -928,7 +926,7 @@ nav {
 } 
 .imagegraphiste {
   width: 400px;
-  height: 350px;
+  height: 370px;
   display: flex;
   align-items: center;
   justify-content: center;
