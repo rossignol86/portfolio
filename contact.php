@@ -154,6 +154,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
                 
                 <input type="submit" value="Envoyer">
+
+                <div class="boutonadmin">
+                    <a href="admin/listecontact.php" class="boutonadmin-envoyer">Admin</a>
+                </div>
             </form>
 
                     

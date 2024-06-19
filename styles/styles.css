@@ -660,6 +660,26 @@ resize: vertical;
   background-color: black;
   color: white;
 }
+.boutonadmin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 40px;
+}          
+.boutonadmin-envoyer {
+  display: inline-block;
+  width:60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: white;
+}
 
 
 
