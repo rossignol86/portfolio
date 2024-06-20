@@ -48,11 +48,11 @@ mysqli_close($connexion);
         <?php if (!empty($contacts)): ?>
             <?php foreach ($contacts as $contact): ?>
                 <div>
-                    <p class="nomducontact"><?= ($contact['nom']); ?></p>
-                    <p class="societeducontact"><?php echo ($contact['societe']); ?></p>
-                    <p class="telducontact"><?php echo ($contact['telephone']); ?></p>
-                    <p class="telducontact" href="mailto:ff.rossignol@yahoo.fr"><?php echo ($contact['email']); ?></p>
-                    <p class="messageducontact"><?php echo ($contact['message']); ?></p>
+                    <p class="nomducontact"><?= $contact['nom']; ?></p>
+                    <p class="societeducontact"><?= $contact['societe']; ?></p>
+                    <p class="telducontact"><?= $contact['telephone']; ?></p>
+                    <p class="telducontact"><?= $contact['email']; ?></p>
+                    <p class="messageducontact"><?= $contact['message']; ?></p>
                     <hr>
                 </div>
             <?php endforeach; ?>
