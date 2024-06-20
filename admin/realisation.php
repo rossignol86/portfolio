@@ -18,12 +18,12 @@ $sql = "SELECT * FROM creations";
 $resultats = mysqli_query($connexion, $sql);
 // $contacts = $resultats->fetch_all(MYSQLI_ASSOC);
 
-$contacts = [];
+$creations = [];
 
 
 if ($resultats) {
     foreach ($resultats as $resultat) {
-        $contacts[] = $resultat;
+        $creations[] = $resultat;
     }
 } else {
     echo "Erreur de requête : " . mysqli_error($connexion) . "<br>";
@@ -39,9 +39,9 @@ mysqli_close($connexion);
   <head>
     <meta charset="UTF-8" />
       
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,14 +114,15 @@ mysqli_close($connexion);
         </nav>
           
                   
-<!-- partie centrale mobile -->        
-<div class="bloclistecontact">
+<!-- partie centrale mobile -->
+ <section class="containerrealisations">       
+    <div >
         <?php if (!empty($creations)): ?>
             <?php foreach ($creations as $creation): ?>
                 <div>
-                    <h1 class=""><?= $creation['titre']; ?></h1>
-                    <img src="../portfolio/images/emailing.jpg"<?= $creation['phototexte']; ?>>
-                    <p class=""><?= $creation['texte']; ?></p>
+                    <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
+                    <img src="../portfolio/images/emailing.jpg"<?= $creation['photo1']; ?>>
+                    <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
                     <hr>
                 </div>
             <?php endforeach; ?>
@@ -129,6 +130,7 @@ mysqli_close($connexion);
             <p>Aucun contact trouvé.</p>
         <?php endif; ?>
     </div>
+        </section>     
 <!-- fin de la partie centrale mobile -->  
 
 
