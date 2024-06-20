@@ -5,24 +5,26 @@ $utilisateur = "root";
 $mot_de_passe = "";
 $base_de_donnees = "portfolio";
 
-// Créer la connexion
-$connexion = mysqli_connect($serveur, $utilisateur,
-$mot_de_passe, $base_de_donnees);
+// Établir la connexion
+$connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);
 
 // Vérifier la connexion
-if ($connexion->connect_error) {
-    die("Connexion échouée: " . $connexion->connect_error);
+if (!$connexion) {
+    die("Échec de la connexion : " . mysqli_connect_error());
 }
 
 // Récupérer l'ID à partir des paramètres de l'URL
 $id = $_GET['id'];
 
-// Préparer et exécuter la requête SQL
-$sql = "SELECT * FROM creations WHERE ID = ?";
-$stmt = $connexion->prepare($sql);
-$stmt->bind_param("i", $id);
-$stmt->execute();
-$resultats = $stmt->get_result();
+// Requête pour récupérer les données de la table "creations"
+$sql = "SELECT * FROM creations";
+$resultats = mysqli_query($connexion, $sql);
+// $contacts = $resultats->fetch_all(MYSQLI_ASSOC);
+
+
+
+
+
 
 
 $creations = [];
