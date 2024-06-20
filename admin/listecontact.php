@@ -51,7 +51,7 @@ mysqli_close($connexion);
                     <p class="nomducontact"><?= ($contact['nom']); ?></p>
                     <p class="societeducontact"><?php echo ($contact['societe']); ?></p>
                     <p class="telducontact"><?php echo ($contact['telephone']); ?></p>
-                    <p class="telducontact"><?php echo ($contact['email']); ?></p>
+                    <p class="telducontact" href="mailto:ff.rossignol@yahoo.fr"><?php echo ($contact['email']); ?></p>
                     <p class="messageducontact"><?php echo ($contact['message']); ?></p>
                     <hr>
                 </div>

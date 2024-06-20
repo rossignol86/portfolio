@@ -264,8 +264,8 @@ main {
 .professions {
   width: 100vh;
   font-family: "Kanit", sans-serif;
-  font-size:70px;
-  line-height: 80px;
+  font-size:80px;
+  line-height: 90px;
   font-weight: 200;
   text-align: left;
   color: #000000;
@@ -683,7 +683,7 @@ resize: vertical;
 
 /* style liste contact */   
 .bloclistecontact{
-  width: 100%;
+  width: 600px;
   height: 100%;
   margin: 0 auto;
 }
