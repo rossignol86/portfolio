@@ -121,7 +121,9 @@ mysqli_close($connexion);
             <?php foreach ($creations as $creation): ?>
                 <div>
                     <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
-                    <img src="<?= $creation['photo1']; ?>">
+                    <div class="blocimagerealisation">
+                    <img class="imagerealisation" src="<?= $creation['photo1']; ?>">
+                    </div>
                     <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
                     <hr>
                 </div>
