@@ -67,9 +67,9 @@ mysqli_close($connexion);
   
         
 <!-- partie gauche noir et fixe -->     
-      <aside>
+        <aside>
             <div>
-                <img class="imagefixe" src="images/franck.png" alt="Image description">
+                <img class="imagefixe" src="../images/franck.png" alt="Image description">
             </div>
             <div class="blocinfos">
                 <h1 class="nom">Franck Rossignol</h1>
@@ -79,74 +79,69 @@ mysqli_close($connexion);
                     afin de faire évoluer ma carrière vers un secteur d'activité stimulant
                     et innovant les métiers du web.</p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="tel:+330662939679">
                             06 62 93 96 79
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="mailto:ff.rossignol@yahoo.fr">
                             ff.rossignol@yahoo.fr
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="images/Franck Rossignol Graphiste.pdf" target="_blank" download="CV Franck ROSSIGNOL.pdf">
                             Téléchargez mon CV
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/linkedin.png" alt="linkedin">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="linkedin">
                         <a class="textecontact" href="https://www.linkedin.com/in/rossignol-franck-4a755a98/" target="_blank">
                             Linkedin
                         </a>
                     </p>
                 </div>
             </div>
-      </aside>
+        </aside>
         
         
         
 <!-- partie droite mobile sauf la navbar -->        
-      <main>
+        <main>
           
 <!-- barre de navigation -->           
-        <nav class="navbar">                    
+            <nav class="navbar">                    
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="creations.html">Mes créations</a></li>
-                    <li><a href="parcours.html">Mon parcours</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../creations.html">Mes créations</a></li>
+                    <li><a href="../parcours.html">Mon parcours</a></li>
+                    <li><a href="../contact.php">Contact</a></li>
                 </ul>
-        </nav>
+            </nav>
           
                   
 <!-- partie centrale mobile -->
- <section class="containerrealisations">       
-    <div >
-        <?php if (!empty($creations)): ?>
-            <?php foreach ($creations as $creation): ?>
-                <div>
-                    <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
-                    <div class="blocimagerealisation">
-                    <img class="imagerealisation" src="<?= $creation['photo1']; ?>">
-                    </div>
-                    <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
-                    <hr>
+            <section class="containerrealisations">       
+                <div >
+                    <?php if (!empty($creations)): ?>
+                        <?php foreach ($creations as $creation): ?>
+                            <div>
+                                <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
+                                <div class="blocimagerealisation">
+                                <img class="imagerealisation" src="<?= $creation['photo1']; ?>">
+                                </div>
+                                <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
+                                <hr>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>Aucun contact trouvé.</p>
+                    <?php endif; ?>
                 </div>
-            <?php endforeach; ?>
-        <?php else: ?>
-            <p>Aucun contact trouvé.</p>
-        <?php endif; ?>
-    </div>
-        </section>     
+            </section>     
 <!-- fin de la partie centrale mobile -->  
-
-
-
-    </div>                
-</container>
            
                   
 <!-- section footer fond vert -->
@@ -154,10 +149,10 @@ mysqli_close($connexion);
                     <footer class="stylefooter">
                         <div class="navbarfooter">
                             <ul>
-                                <li><a href="index.html">Accueil</a></li>
-                                <li><a href="creations.html">Mes créations</a></li>
-                                <li><a href="parcours.html">Mon parcours</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="../index.html">Accueil</a></li>
+                                <li><a href="../creations.html">Mes créations</a></li>
+                                <li><a href="../parcours.html">Mon parcours</a></li>
+                                <li><a href="../contact.php">Contact</a></li>
                             </ul>
                         </div>
                         
@@ -171,7 +166,5 @@ mysqli_close($connexion);
         </div>
                  
       </main>
-        
-    </div>
   </body>
 </html>

@@ -47,6 +47,13 @@ mysqli_close($connexion);
     <div class="bloclistecontact">
         <?php if (!empty($contacts)): ?>
             <?php foreach ($contacts as $contact): ?>
+                <form class="boutonensavoirplus" action="../index.html" method="GET">
+                            <input type="hidden" name="id" value="1">
+                            <button type="submit">Accueil</button>
+                        </form>
+                <div>
+                    <hr>
+                </div>
                 <div>
                     <p class="nomducontact"><?= $contact['nom']; ?></p>
                     <p class="societeducontact"><?= $contact['societe']; ?></p>
