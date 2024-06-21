@@ -22,15 +22,15 @@ if (!$connexion) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
 // Récupération des données du formulaire
-    $nom = $_POST['nom'];
-    $societe = $_POST['societe'];
-    $email = $_POST['email'];
-    $telephone = $_POST['telephone'];
-    $message = $_POST['message'];
+    $titre = $_POST['titre'];
+    $photolegende = $_POST['photolegende'];
+    $photo1 = $_POST['photo1'];
+    $texte = $_POST['texte'];
+    $phototexte = $_POST['phototexte'];
    
 // Requête d'insertion des données
-    $sql = "INSERT INTO contacts (nom, societe, email, telephone, message)
-    VALUES ('$nom', '$societe', '$email', '$telephone', '$message')";
+    $sql = "INSERT INTO creations (titre, photolegende, photo1, texte, phototexte)
+    VALUES ('$titre', '$photolegende', '$photo1', '$texte', '$phototexte')";
  
 // Exécution de la requête d'insertion
     mysqli_query($connexion,$sql);
@@ -40,13 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
       
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,9 +64,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
         
 <!-- partie gauche noir et fixe -->     
-      <aside>
+        <aside>
             <div>
-                <img class="imagefixe" src="images/franck.png" alt="Image description">
+                <img class="imagefixe" src="../images/franck.png" alt="Image description">
             </div>
             <div class="blocinfos">
                 <h1 class="nom">Franck Rossignol</h1>
@@ -76,103 +76,100 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     afin de faire évoluer ma carrière vers un secteur d'activité stimulant
                     et innovant les métiers du web.</p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="tel:+330662939679">
                             06 62 93 96 79
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="mailto:ff.rossignol@yahoo.fr">
                             ff.rossignol@yahoo.fr
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/flecheverte1.png" alt="fleche verte">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
                         <a class="textecontact" href="images/Franck Rossignol Graphiste.pdf" target="_blank" download="CV Franck ROSSIGNOL.pdf">
                             Téléchargez mon CV
                         </a>
                     </p>
                     <p class="textecontact">
-                        <img class="flecheverte" src="images/linkedin.png" alt="linkedin">
+                        <img class="flecheverte" src="../images/flecheverte1.png" alt="linkedin">
                         <a class="textecontact" href="https://www.linkedin.com/in/rossignol-franck-4a755a98/" target="_blank">
                             Linkedin
                         </a>
                     </p>
                 </div>
             </div>
-      </aside>
+        </aside>
         
         
         
 <!-- partie droite mobile sauf la navbar -->        
-      <main>
+        <main>
           
 <!-- barre de navigation -->           
-        <nav class="navbar">                    
+
+            <nav class="navbar">                    
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="creations.html">Mes créations</a></li>
-                    <li><a href="parcours.html">Mon parcours</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../creations.html">Mes créations</a></li>
+                    <li><a href="../parcours.html">Mon parcours</a></li>
+                    <li><a href="../contact.php">Contact</a></li>
                 </ul>
-        </nav>
+            </nav>
           
                   
-<!-- partie centrale mobile -->        
-        <div>
 
-            
-            <container class="bloccontact">
-                <div>
-                    <h1 class="contact">
-                        <img class="flechevertecontact" src="images/flecheverte1.png" alt="fleche verte">
-                        Contact
-                    </h1>
-                    <span class="dateheure">
-                        <?php
-                            // Un script PHP simple qui affiche la date et l'heure actuelles
-                            echo "<p>Nous sommes le " . date("d/m/Y") . " et il est " . date("H:i:s") . "</p>";
-                        ?>
-                    </span>
+<!-- partie centrale mobile -->
+
+        <container class="bloccontact">
+            <div>
+                <h1 class="contact">
+                <img class="flechevertecontact" src="images/flecheverte1.png" alt="fleche verte">
+                    Ajouter realisation
+                </h1>
 
             <!-- Formulaire de renseignement -->
-            <form action="contact.php" method="post">
-                <label for="nom">Nom :</label>
-                <input class="formulaire" type="text" id="nom" name="nom" required><br><br>
-                
-                <label for="societe">Société :</label>
-                <input class="formulaire" type="text" id="societe" name="societe"><br><br>
-                
-                <label for="telephone">Téléphone :</label>
-                <input class="formulaire" type="tel" id="telephone" name="telephone"><br><br>
-                
-                <label for="email">Email :</label>
-                <input class="formulaire" type="email" id="email" name="email" required><br><br>
-                
-                <label for="message">Message :</label>
-                <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
-                
-                <input type="submit" value="Envoyer">
+                <form action="contact.php" method="post">
+                    <label for="nom">Nom :</label>
+                    <input class="formulaire" type="text" id="nom" name="nom" required><br><br>
+                    
+                    <label for="societe">Société :</label>
+                    <input class="formulaire" type="text" id="societe" name="societe"><br><br>
+                    
+                    <label for="telephone">Téléphone :</label>
+                    <input class="formulaire" type="tel" id="telephone" name="telephone"><br><br>
+                    
+                    <label for="email">Email :</label>
+                    <input class="formulaire" type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="message">Message :</label>
+                    <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
+                    
+                    <input type="submit" value="Envoyer">
 
-                <div class="boutonadmin">
-                    <a href="admin/listecontact.php" class="boutonadmin-envoyer">Admin</a>
-                </div>
-            </form>
+                    <div class="boutonadmin">
+                        <a href="admin/listecontact.php" class="boutonadmin-envoyer">Admin</a>
+                    </div>
+                </form>
 
                     
-                </div>
-            </container>            
-                    
+            </div>
+        </container>  
+    
+<!-- fin de la partie centrale mobile -->  
+           
+                  
 <!-- section footer fond vert -->
-                <section class="sectionfooterfondvert">
+            <section class="sectionfooterfondvert">
                     <footer class="stylefooter">
                         <div class="navbarfooter">
                             <ul>
-                                <li><a href="index.html">Accueil</a></li>
-                                <li><a href="creations.html">Mes créations</a></li>
-                                <li><a href="parcours.html">Mon parcours</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="../index.html">Accueil</a></li>
+                                <li><a href="../creations.html">Mes créations</a></li>
+                                <li><a href="../parcours.html">Mon parcours</a></li>
+                                <li><a href="../contact.php">Contact</a></li>
                             </ul>
                         </div>
                         
@@ -181,12 +178,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </footer>
 
-                </section>
+            </section>
             
         </div>
                  
       </main>
-        
-    </div>
   </body>
 </html>
