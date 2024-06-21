@@ -45,7 +45,7 @@ mysqli_close($connexion);
 </head>
 <body>
     <div>
-        <form class="boutonensavoirplus" action="../index.html" method="GET">
+        <form class="boutonensavoirplus" action="../admin.html" method="GET">
             <input type="hidden" name="id" value="1">
             <button type="submit">Accueil</button>
         </form>

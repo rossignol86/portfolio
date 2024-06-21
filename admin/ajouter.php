@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="submit" value="Envoyer">
 
                     <div class="boutonadmin">
-                        <a href="admin/listecontact.php" class="boutonadmin-envoyer">Admin</a>
+                        <a href="../admin.html" class="boutonadmin-envoyer">Admin</a>
                     </div>
                 </form>
 
