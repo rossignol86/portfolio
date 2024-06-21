@@ -44,16 +44,20 @@ mysqli_close($connexion);
     <title>Liste des contacts</title>
 </head>
 <body>
+    <div>
+        <form class="boutonensavoirplus" action="../index.html" method="GET">
+            <input type="hidden" name="id" value="1">
+            <button type="submit">Accueil</button>
+        </form>
+        <div>
+            <hr>
+        </div>
+    </div>
+
+
     <div class="bloclistecontact">
         <?php if (!empty($contacts)): ?>
             <?php foreach ($contacts as $contact): ?>
-                <form class="boutonensavoirplus" action="../index.html" method="GET">
-                            <input type="hidden" name="id" value="1">
-                            <button type="submit">Accueil</button>
-                        </form>
-                <div>
-                    <hr>
-                </div>
                 <div>
                     <p class="nomducontact"><?= $contact['nom']; ?></p>
                     <p class="societeducontact"><?= $contact['societe']; ?></p>
@@ -61,11 +65,14 @@ mysqli_close($connexion);
                     <p class="telducontact"><?= $contact['email']; ?></p>
                     <p class="messageducontact"><?= $contact['message']; ?></p>
                     <hr>
-                </div>
+                </div>    
             <?php endforeach; ?>
         <?php else: ?>
             <p>Aucun contact trouvé.</p>
         <?php endif; ?>
     </div>
+
+
+    
 </body>
 </html>

@@ -14,7 +14,7 @@ if ($connexion->connect_error) {
     die("Connexion échouée: " . $connexion->connect_error);
 }
 
-// Récupérer l'ID à partir des paramètres de l'URL
+// Requete pour Récupérer l'ID à partir des paramètres de l'URL
 $id = $_GET['id'];
 
 // Préparer et exécuter la requête SQL
@@ -140,6 +140,7 @@ mysqli_close($connexion);
                         <p>Aucun contact trouvé.</p>
                     <?php endif; ?>
                 </div>
+                
             </section>     
 <!-- fin de la partie centrale mobile -->  
            
