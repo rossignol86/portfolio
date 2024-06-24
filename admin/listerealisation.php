@@ -20,15 +20,12 @@ if ($_GET['id_supprimer']) {
 
 
 
-
 // Requête pour récupérer les données de la table "creations"
 $sql = "SELECT * FROM creations ORDER BY id DESC";
 $resultats = mysqli_query($connexion, $sql);
 // $contacts = $resultats->fetch_all(MYSQLI_ASSOC);
 
 $contacts = [];
-
-
 
 
 if ($resultats) {

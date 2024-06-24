@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">  
       
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Modifier</title>
       
       
   </head>
@@ -78,12 +78,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </ul>
             </nav>
         
-
-
+                  
 
 <!-- partie centrale mobile -->
 
         <container class="blocajouterrealisation">
+
             <div>
                 <form class="boutonensavoirplus" action="../admin.html" method="GET">
                     <input type="hidden" name="id" value="1">
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div>
                 <h1 class="contact">
                 <img class="flechevertecontact" src="../images/flecheverte1.png" alt="fleche verte">
-                    Ajouter realisation
+                    Modifier contenu
                 </h1>
 
             <!-- Formulaire de renseignement -->
@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                     <div class="blocajouterrealisation">
                         <div class="boutonadmingestion">
-                            <a href="admin/ajouter.php" class="boutonadmingestion-envoyer">Ajouter contenu</a>
+                            <a href="admin/ajouter.php" class="boutonadmingestion-envoyer">Modifier contenu</a>
                         </div>
                     </div>    
                 </form>
