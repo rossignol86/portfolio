@@ -542,7 +542,10 @@ main {
   padding: 0px 20px 0px 20px;
   object-fit: cover;
 }
-
+.imagelisterealisation {
+  width: 400px;
+  height: 330px;
+}
 
 
 
