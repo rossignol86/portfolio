@@ -14,7 +14,7 @@ if (!$connexion) {
 }
 
 // Requête pour récupérer les données de la table "creations"
-$sql = "SELECT * FROM contacts";
+$sql = "SELECT * FROM contacts ORDER BY id DESC";
 $resultats = mysqli_query($connexion, $sql);
 // $contacts = $resultats->fetch_all(MYSQLI_ASSOC);
 

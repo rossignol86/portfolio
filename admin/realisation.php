@@ -133,7 +133,6 @@ mysqli_close($connexion);
                                 <img class="imagerealisation" src="<?= $creation['photo1']; ?>">
                                 </div>
                                 <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
-                                <hr>
                             </div>
                         <?php endforeach; ?>
                     <?php else: ?>
