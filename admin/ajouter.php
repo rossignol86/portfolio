@@ -61,47 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <body>
       
     <div class="container">
-  
-        
-<!-- partie gauche noir et fixe -->     
-        <aside>
-            <div>
-                <img class="imagefixe" src="../images/franck.png" alt="Image description">
-            </div>
-            <div class="blocinfos">
-                <h1 class="nom">Franck Rossignol</h1>
-                <div>
-                    <p class="textepresentation">Après un parcours professionnelle de plus de 35 ans comme Infographiste, Chef de studio, WebDesigner & Freelance,
-                    j'ai décidé de me lancer de nouveaux défis professionnels
-                    afin de faire évoluer ma carrière vers un secteur d'activité stimulant
-                    et innovant les métiers du web.</p>
-                    <p class="textecontact">
-                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
-                        <a class="textecontact" href="tel:+330662939679">
-                            06 62 93 96 79
-                        </a>
-                    </p>
-                    <p class="textecontact">
-                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
-                        <a class="textecontact" href="mailto:ff.rossignol@yahoo.fr">
-                            ff.rossignol@yahoo.fr
-                        </a>
-                    </p>
-                    <p class="textecontact">
-                        <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
-                        <a class="textecontact" href="images/Franck Rossignol Graphiste.pdf" target="_blank" download="CV Franck ROSSIGNOL.pdf">
-                            Téléchargez mon CV
-                        </a>
-                    </p>
-                    <p class="textecontact">
-                        <img class="flecheverte" src="../images/flecheverte1.png" alt="linkedin">
-                        <a class="textecontact" href="https://www.linkedin.com/in/rossignol-franck-4a755a98/" target="_blank">
-                            Linkedin
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </aside>
         
         
         
@@ -118,40 +77,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="../contact.php">Contact</a></li>
                 </ul>
             </nav>
-          
+        
                   
 
 <!-- partie centrale mobile -->
 
-        <container class="bloccontact">
+        <container class="blocajouterrealisation">
             <div>
                 <h1 class="contact">
-                <img class="flechevertecontact" src="images/flecheverte1.png" alt="fleche verte">
+                <img class="flechevertecontact" src="../images/flecheverte1.png" alt="fleche verte">
                     Ajouter realisation
                 </h1>
 
             <!-- Formulaire de renseignement -->
                 <form action="contact.php" method="post">
-                    <label for="nom">Nom :</label>
-                    <input class="formulaire" type="text" id="nom" name="nom" required><br><br>
+                    <label for="nom">titre :</label>
+                    <input class="formulaire" type="text" id="titre" name="titre"><br><br>
                     
-                    <label for="societe">Société :</label>
-                    <input class="formulaire" type="text" id="societe" name="societe"><br><br>
+                    <label for="societe">photolegende :</label>
+                    <input class="formulaire" type="text" id="photolegende" name="photolegende"><br><br>
                     
-                    <label for="telephone">Téléphone :</label>
-                    <input class="formulaire" type="tel" id="telephone" name="telephone"><br><br>
+                    <label for="photo1">photo1</label>
+                    <input class="formulaire" type="text" id="photo1" name="photo1"><br><br>
                     
-                    <label for="email">Email :</label>
-                    <input class="formulaire" type="email" id="email" name="email" required><br><br>
+                    <label for="email">texte</label>
+                    <input class="formulaire" type="text" id="texte" name="texte" required><br><br>
+                                        
+                    <label for="photo1">photo1</label>
+                    <input class="formulaire" type="text" id="photo1" name="photo1"><br><br>                    
                     
-                    <label for="message">Message :</label>
-                    <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
-                    
-                    <input type="submit" value="Envoyer">
-
-                    <div class="boutonadmin">
-                        <a href="../admin.html" class="boutonadmin-envoyer">Admin</a>
-                    </div>
+                    <div class="blocajouterrealisation">
+                        <div class="boutonadmingestion">
+                            <a href="admin/ajouter.php" class="boutonadmingestion-envoyer">Ajouter contenu</a>
+                        </div>
+                    </div>    
                 </form>
 
                     
@@ -160,25 +119,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 <!-- fin de la partie centrale mobile -->  
            
-                  
-<!-- section footer fond vert -->
-            <section class="sectionfooterfondvert">
-                    <footer class="stylefooter">
-                        <div class="navbarfooter">
-                            <ul>
-                                <li><a href="../index.html">Accueil</a></li>
-                                <li><a href="../creations.html">Mes créations</a></li>
-                                <li><a href="../parcours.html">Mon parcours</a></li>
-                                <li><a href="../contact.php">Contact</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="coordonnees">
-                            <p class="mentions">ff.rossignol@yahoo.fr - 86190 VOUILLE - ©rossignol - 2024 -&nbsp;Webdesign&nbsp;sur&nbsp;FIGMA - HTML & CSS sur Visual Studio Code</p>
-                        </div>
-                    </footer>
-
-            </section>
             
         </div>
                  
