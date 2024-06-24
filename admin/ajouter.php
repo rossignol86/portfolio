@@ -99,27 +99,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </h1>
 
             <!-- Formulaire de renseignement -->
-                <form action="contact.php" method="post">
-                    <label for="nom">titre :</label>
+                <form action="ajouter.php" method="post">
+                    <label for="nom">Titre :</label>
                     <input class="formulaire" type="text" id="titre" name="titre"><br><br>
                     
-                    <label for="societe">photolegende :</label>
+                    <label for="societe">Photolegende :</label>
                     <input class="formulaire" type="text" id="photolegende" name="photolegende"><br><br>
                     
-                    <label for="photo1">photo1</label>
+                    <label for="photo1">Photo1</label>
                     <input class="formulaire" type="text" id="photo1" name="photo1"><br><br>
                     
-                    <label for="email">texte</label>
+                    <label for="email">Texte</label>
                     <input class="formulaire" type="text" id="texte" name="texte" required><br><br>
                                         
-                    <label for="photo1">photo1</label>
-                    <input class="formulaire" type="text" id="photo1" name="photo1"><br><br>                    
+                    <label for="photo1">phototexte</label>
+                    <input class="formulaire" type="text" id="phototexte" name="photo1"><br><br>                    
                     
-                    <div class="blocajouterrealisation">
-                        <div class="boutonadmingestion">
-                            <a href="admin/ajouter.php" class="boutonadmingestion-envoyer">Ajouter contenu</a>
-                        </div>
-                    </div>    
+                    <input type="submit" value="Envoyer">    
                 </form>
 
                     
