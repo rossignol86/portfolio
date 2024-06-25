@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ('$titre', '$photolegende', '$photo1', '$texte', '$phototexte')";
  
 // Exécution de la requête d'insertion
-    mysqli_query($connexion,$sql);
+    mysqli_query($connexion, $sql);
 }
  
 // Fermer la connexion
@@ -113,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input class="formulaire" type="text" id="texte" name="texte" required><br><br>
                                         
                     <label for="photo1">phototexte</label>
-                    <input class="formulaire" type="text" id="phototexte" name="photo1"><br><br>                    
+                    <input class="formulaire" type="text" id="phototexte" name="phototexte"><br><br>                    
                     
                     <input type="submit" value="Envoyer">    
                 </form>
