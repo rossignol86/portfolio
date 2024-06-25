@@ -132,7 +132,7 @@ a {
 }
 
 .container {
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     display: flex;
 }
 
@@ -245,6 +245,7 @@ main {
 .sectioncontenuimage {
   display: flex;
   align-items: center;
+  height: 90vh;
 }
 .imagefonddiv {
   width: 100%;
@@ -256,15 +257,17 @@ main {
 }
 /* style 4 métiers bloc central */
 .blocprofessions{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-content: center;
+  /* margin: 0 auto; */
   padding: 0px 0px 0px 60px;
 }
 .professions {
-  width: 100vh;
+  /* width: 100vh; */
   font-family: "Kanit", sans-serif;
   font-size:80px;
   line-height: 90px;
@@ -349,7 +352,7 @@ main {
   justify-content: center;
 }
 .infosfondblanc {
-  width: 700px;
+  width: 70%;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -381,7 +384,7 @@ main {
 
 /* style page creations */   
 .bloccreations{
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -390,7 +393,7 @@ main {
   padding: 30px 0px 0px 0px;
 }
 .bloccreations2{
-  width: 100vh;
+  /* width: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -398,7 +401,7 @@ main {
   margin: 0 auto;
 }
 .titrecreations {
-  width: 100vh;
+  /* width: 100vh; */
   font-family: "Kanit", sans-serif;
   font-size:70px;
   line-height: 80px;
@@ -414,8 +417,8 @@ main {
   margin: 0 auto;
   gap: 40px;
   padding: 0px 0px 40px 0px;
-  width: 100vh;
-  /* flex-direction: column; */
+  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -426,11 +429,13 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* padding: 20px; */
   gap: 20px;
-  width: 400px;
-  height: 600px;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+
 }
 .containerimage {
-  width: 400px;
+  width: 100%;
   height: 330px;
 }
 .image {
@@ -441,6 +446,7 @@ main {
   padding: 10px;
 }
 .travaux {
+  width: 100%;
   color: #000000;
   font-weight: 300;
   font-size: 40px;
@@ -449,6 +455,7 @@ main {
   padding: 20px 0px 10px 0px;
 }
 .description {
+  width: 100%;
   font-size: 1em;
   line-height: 20px;
   color:#000000;
@@ -458,6 +465,9 @@ main {
 .boutonensavoirplus{
   height: 15px;
 }
+
+
+
 
 
 /* style page emailing */
@@ -553,7 +563,7 @@ main {
 
 /* style page parcours professionnel */   
 .containertxtparcours{
-  width: 700px;
+  width: 100%;
 }
 .blocparcours{
   width: 100%;
@@ -564,22 +574,21 @@ main {
   padding: 30px 0px 0px 0px;
 }
 .sectioncouleurblanc{
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
-  margin: 20px 0px 20px 0px;
+  margin: 0 auto;
 }
 .sectioncouleurvert{
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-color: #edf1cc;
   padding: 20px 20px 20px 20px;
-  margin: 20px 0px 20px 0px;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 40px 0px 40px 0px;
+  margin: 0 auto;
 }
 .titreparcours {
-  width: 100%;
   font-family: "Kanit", sans-serif;
   font-size:70px;
   line-height: 80px;
@@ -892,15 +901,9 @@ resize: vertical;
 
 
 
-
-
-
-
-
-
 /* @media (max-width: 800px) */
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 800px){
 .container {
   width: 100%;
   flex-direction: column;
@@ -990,8 +993,9 @@ nav {
 
 /* Section image de fond et titre métiers DISPARAIT*/
 .sectioncontenuimage {
-  display: flex;
-  align-items: center;
+  display: none;
+  /* display: flex;
+  align-items: center; */
 }
 .imagefonddiv {
   display: none;
@@ -1005,16 +1009,16 @@ nav {
 /* style 4 métiers bloc central */
 .blocprofessions{
   display: none;
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding: 0px 0px 0px 60px;
+  padding: 0px 0px 0px 60px; */
 }
 .professions {
   display: none;
-  width: 100vh;
+  /* width: 100vh;
   font-family: "Kanit", sans-serif;
   font-size:70px;
   line-height: 80px;
@@ -1022,7 +1026,7 @@ nav {
   text-align: left;
   color: #000000;
   padding: 0px 0px 20px 0px;
-  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2);
+  text-shadow: 2px 2px 5px rgba(205, 220, 41, 2); */
 }
 .flecheverteprofessions {
   display: none;
@@ -1081,7 +1085,7 @@ nav {
   flex-direction: column;
 } 
 .imagegraphiste {
-  width: 400px;
+  width: 100%;
   height: 370px;
   display: flex;
   align-items: center;
@@ -1222,21 +1226,21 @@ nav {
   padding: 30px 0px 0px 0px;
 }
 .sectioncouleurblanc{
-  width: 300px;
+  width: 90%;
   height: 100%;
   background-color: #ffffff;
   padding: 20px 0px 20px 0px;
   /* margin: 0 auto; */
 }
 .sectioncouleurvert{
-  width: 300px;
+  width: 90%;
   height: 100%;
   background-color: #edf1cc;
   padding: 20px 0px 20px 0px;
   /* margin: 0 auto; */
 }
 .containertxtparcours{
-  width: 300px;
+  width: 100%;
   padding: 0px 0px 0px 0px;
 }
 .titreparcours {
