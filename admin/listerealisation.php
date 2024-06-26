@@ -13,10 +13,10 @@ if (!$connexion) {
     die("Échec de la connexion : " . mysqli_connect_error());
 }
 
-if ($_GET["id_supprimer"]) {
-    $sql = "DELETE from creations where id=" . $_GET["id_supprimer"];
-    $resultats=mysqli_query($connexion, $sql);
-}
+// if ($_GET["id_supprimer"]) {
+//     $sql = "DELETE from creations where id=" . $_GET["id_supprimer"];
+//     $resultats=mysqli_query($connexion, $sql);
+// }
 
 
 
