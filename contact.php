@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="message">Message :</label>
                 <textarea  class="formulaire" id="message" name="message" required></textarea><br><br>
                 
-                <input type="submit" value="Envoyer">
+                <input class="boutton" type="submit" value="Envoyer">
             </form>
 
                     
