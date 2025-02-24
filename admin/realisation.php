@@ -63,45 +63,115 @@ mysqli_close($connexion);
   </head>
     
   <body>
-      
-        <section>       
+    <div class="container">
+  
+<!-- partie gauche noir et fixe -->     
+    <aside>
+        <div>
+            <img class="imagefixe" src="../images/franck.png" alt="Franck Rossignol">
+        </div>
+        <div class="blocinfos">
+            <h1 class="nom">Franck Rossignol</h1>
+            <div>
+                <p class="textepresentation">Après un parcours professionnelle de plus de 35 ans comme Infographiste, Chef de studio, WebDesigner & Freelance,
+                j'ai décidé de me lancer de nouveaux défis professionnels
+                afin de faire évoluer ma carrière vers un secteur d'activité stimulant
+                et innovant les métiers du web.</p>
+                <p class="textecontact">
+                    <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
+                    <a class="textecontact" href="tel:+330662939679">
+                        06 62 93 96 79
+                    </a>
+                </p>
+                <p class="textecontact">
+                    <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
+                    <a class="textecontact" href="mailto:ff.rossignol@yahoo.fr">
+                        ff.rossignol@yahoo.fr
+                    </a>
+                </p>
+                <p class="textecontact">
+                    <img class="flecheverte" src="../images/flecheverte1.png" alt="fleche verte">
+                    <a class="textecontact" href="images/Franck Rossignol Graphiste.pdf" target="_blank" download="CV Franck ROSSIGNOL.pdf">
+                        Téléchargez mon CV
+                    </a>
+                </p>
+                <p class="textecontact">
+                    <img class="flecheverte" src="../images/linkedin.png" alt="linkedin">
+                    <a class="textecontact" href="https://www.linkedin.com/in/rossignol-franck-4a755a98/" target="_blank">
+                        Linkedin
+                    </a>
+                </p>
+                <div>
+                    <form class="boutonensavoirplus" action="admin.html" method="GET">
+                        <input type="hidden" name="id" value="1">
+                        <button type="submit">Admin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>     
+
+<!-- partie droite mobile sauf la navbar -->        
+        <main>
+            
+  <!-- barre de navigation -->           
+        <nav class="navbar">                    
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="creations.html">Mes créations</a></li>
+                <li><a href="parcours.html">Mon parcours</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+            
+                    
+  
+<!-- partie centrale-->        
+        <div class="content">
+  
+  <!-- TITRE PAGE MES CREATIONS -->           
+            <section>       
                 <div >
                     <?php if (!empty($creations)): ?>
-                        <?php foreach ($creations as $creation): ?>
-                            <div>
-                                <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
-                                <div class="blocimagerealisation">
-                                <img class="imagerealisation" alt="Mes realisations" src="<?= $creation['photo1']; ?>">
+                            <?php foreach ($creations as $creation): ?>
+                                <div>
+                                    <h1 class="titrerealisation"><?= $creation['titre']; ?></h1>
+                                    <div class="blocimagerealisation">
+                                    <img class="imagerealisation" alt="Mes realisations" src="<?= $creation['photo1']; ?>">
+                                    </div>
+                                    <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
                                 </div>
-                                <p class="descriptionrealisation"><?= $creation['texte']; ?></p>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <p>Aucun contact trouvé.</p>
-                    <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <p>Aucun contact trouvé.</p>
+                        <?php endif; ?>
                 </div>
+            </section>        
                 
-            </section>     
+  <!-- section footer fond vert -->
             <section class="sectionfooterfondvert">
-                    <footer class="stylefooter">
-                        <div class="navbarfooter">
-                            <ul>
-                                <li><a href="../index.html">Accueil</a></li>
-                                <li><a href="../creations.html">Mes créations</a></li>
-                                <li><a href="../parcours.html">Mon parcours</a></li>
-                                <li><a href="../contact.php">Contact</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="coordonnees">
-                            <p class="mentions">ff.rossignol@yahoo.fr - 86190 VOUILLE - ©rossignol - 2024 -&nbsp;Webdesign&nbsp;sur&nbsp;FIGMA - HTML & CSS sur Visual Studio Code</p>
-                        </div>
-                    </footer>
-
+                <footer class="stylefooter">
+                    <div class="navbarfooter">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="creations.html">Mes créations</a></li>
+                            <li><a href="parcours.html">Mon parcours</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="coordonnees">
+                        <p class="mentions">ff.rossignol@yahoo.fr - 86190 VOUILLE - ©rossignol - 2024 -&nbsp;Webdesign&nbsp;sur&nbsp;FIGMA - HTML & CSS sur Visual Studio Code</p>
+                    </div>
+                </footer>
             </section>
-            
-        </div>
-                 
-      </main>
+  
+          </div>
+   <!-- fin de la partie centrale-->             
+                  
+        </main>
+          
+    </div>
+
   </body>
 </html>
