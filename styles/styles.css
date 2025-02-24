@@ -184,9 +184,8 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
-  display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 80px;
 }
 /* .infosfondvert {
     width: 70%;
